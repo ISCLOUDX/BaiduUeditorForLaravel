@@ -1,6 +1,6 @@
 {
     "name": "iscms/ueditor",
-    "description": "基于Laravel5的百度翻译接口封装",
+    "description": "Laravel百度编辑器封装",
    "keywords": ["百度编辑器","editor","百度editor","laravel","laravel 百度编辑器","laravel","ueditor for laravel"],
     "authors": [
         {
