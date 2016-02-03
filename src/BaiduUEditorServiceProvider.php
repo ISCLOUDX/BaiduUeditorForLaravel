@@ -10,6 +10,7 @@ class BaiduUEditorServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../config/ueditor.php' => config_path('ueditor.php'),
+            __DIR__ . '/../vendor/ueditor/'=>public_path('/ueditor'),
         ]);
     }
 
@@ -18,8 +19,5 @@ class BaiduUEditorServiceProvider extends ServiceProvider
     {
         $this->app->bind('iscms\ueditor\BaiduEditorApi', 'iscms\ueditor\BaiduEditorService');
     }
-
-
-
 
 }

@@ -60,31 +60,4 @@ class BaiduEditorService extends UploadServer implements BaiduEditorApi
         return response()->json($config);
     }
 
-//
-//    private function uploadScrawl()
-//    {
-//        $this->encrypt();
-//        $path=$this->folderPath().$this->createRandomName().".png";
-//
-//        if (config('ueditor.Remote')) {
-//            $remoteType = config('ueditor.RemoteServer');
-//            if (Storage::disk('{$remoteType}')->put("{$path}",base64_decode($this->request->file))) {
-//                $remoteUrl = config('ueditor.RemoteUrl');
-//                $showRemote = "{$remoteUrl}{$path}";
-//            };
-//        }
-//        if (config('ueditor.LocalSave')) {
-//            if (Storage::disk('local')->put("{$path}",base64_decode($this->request->file))) {
-//                $localShow = "{$path}";
-//            }
-//        }
-//
-//        return response()->json([
-//            "state" => "SUCCESS",
-//            "url" => "{$path}",
-//            "title" => "",
-//            "original" => "",
-//        ]);
-//    }
-//
 }
