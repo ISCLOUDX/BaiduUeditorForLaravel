@@ -1,0 +1,23 @@
+{
+    "name": "iscms/ueditor",
+    "description": "基于Laravel5的百度翻译接口封装",
+   "keywords": ["百度编辑器","editor","百度editor","laravel","laravel 百度编辑器","laravel","ueditor for laravel"],
+    "authors": [
+        {
+            "name": "秋綾",
+            "email": "saberlove@me.com"
+        }
+    ],
+    "require": {
+      "php": ">=5.5.0",
+      "laravel/framework": "5.*",
+      "vinkla/hashids": "^2.2",
+      "ixudra/curl": "^6.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "iscms\\ueditor\\": "src/"
+      }
+    },
+    "homepage": "https://www.iscloudx.com",
+}
