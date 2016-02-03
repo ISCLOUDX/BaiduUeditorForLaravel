@@ -8,12 +8,18 @@ class BaiduUEditorServiceProvider extends ServiceProvider
     {
         include __DIR__.'/../routes.php';
 
-        $this->publishes([
-            __DIR__ . '/../config/ueditor.php' => config_path('ueditor.php'),
-            __DIR__ . '/../vendor/ueditor/'=>public_path('/ueditor'),
-        ]);
-    }
 
+        $this->loadViewsFrom(__DIR__.'/../vendor/views', 'ueditor');
+
+        $this->published([
+            __DIR__ . '/../config/ueditor.php' => config_path('ueditor.php'),
+        ],'config');
+
+        $this->publishes([
+            __DIR__.'/../vendor/ueditor' => public_path('/ueditor'),
+        ],'public');
+
+    }
 
     public function register()
     {
