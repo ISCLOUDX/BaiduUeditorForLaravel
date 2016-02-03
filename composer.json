@@ -12,7 +12,8 @@
       "php": ">=5.5.0",
       "laravel/framework": "5.*",
       "vinkla/hashids": "^2.2",
-      "ixudra/curl": "^6.0"
+      "ixudra/curl": "^6.0",
+      "intervention/image": "^2.3"
     },
     "autoload": {
       "psr-4": {
