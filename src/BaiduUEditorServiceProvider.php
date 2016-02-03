@@ -11,7 +11,7 @@ class BaiduUEditorServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__.'/../vendor/views', 'ueditor');
 
-        $this->published([
+        $this->publishes([
             __DIR__ . '/../config/ueditor.php' => config_path('ueditor.php'),
         ],'config');
 
